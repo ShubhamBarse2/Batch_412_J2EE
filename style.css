@@ -1,0 +1,46 @@
+/* 
+comments in css 
+*/
+
+
+/* 1 . Element Selector */
+
+/* h1{
+    background-color: red;
+} */
+
+
+/* 2 . Universal selector  */
+
+/* *{
+   background-color: cadetblue; 
+} */
+
+/* 3 . Group selector */
+
+
+/* h1,h3{
+    color: blue;
+
+} */
+
+
+/* 4 . Class Selector  */
+
+.heading{
+color: red;
+text-align: center;
+
+
+}
+.heading2{
+color: blue;
+text-align: right;
+text-decoration: underline;
+}
+
+/* 5 . ID Selector  */
+/* 
+#heading{
+  background-color: aqua;  
+} */
