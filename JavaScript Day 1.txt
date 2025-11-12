@@ -1,0 +1,67 @@
+Introduction to JavaScript 
+
+##  What is JavaScript ?
+
+JavaScript is a programming language used to make web pages interactive.
+It is a client-side language, which means it runs in the user's browser without requiring any
+resources from the server. JavaScript is used alongside HTML and CSS to create dynamic 
+web applications.
+ 
+      Case-Sensitive :  JavaScript is case-sensitive, meaning myvariable and MYVARIABLE are different. 
+      Semicolons :    semicolons can be used to terminate statements to avoid confusion. 
+
+
+## Why Learn JavaScript?
+
+JavaScript is the most widely-used language in web development.
+It allows you to create interactive elements like buttons, forms, animations, etc.
+It’s the foundation of front-end frameworks like React, Angular, and Vue.js.
+
+
+## JavaScript Display  Content
+
+     1. Writing into an HTML element, using innerHTML.
+
+     2. Writing into the HTML output using document.write().
+
+     3. Writing into an alert box, using window.alert().
+
+     4. Writing into the browser console, using console.log().
+
+
+
+
+
+## JavaScript Basics
+              JavaScript is case-sensitive and supports the use of comments.
+
+             Single-line comment: // This is a comment
+             Multi-line comment: /* This is a multi-line comment */
+
+
+##  How to Include JavaScript in HTML.   
+
+          1) <script src="script.js"></script>
+
+            2) <script>
+                   Console.log("Hello World");
+               </script>
+
+
+##  Datatypes:
+
+there are two types of data types in javascripts 
+
+      1. primitive data types : undefined, null, number, Bigint, string, boolean 
+      2. reference data types / Non- primitive data types : Arrays and Objects. 
+
+## Variables:
+
+Variables are used to store data. In modern JavaScript, use let and const, var also:
+
+
+    let name = "John";        // Can be reassigned        
+    const age = 25;           // Constant, cannot be reassigned, likes as final variable in java
+    var address = "pune";     // Older versions used var, but it is less commonly used today due to issues with scoping.{}
+
+console.log(name, age ,address);

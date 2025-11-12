@@ -1,0 +1,248 @@
+ Todays Lecture Agenda : 
+
+
+
+## Arrays:
+     methods of array :
+
+let arr = [2,5,2,8,4,9,6,7];
+
+     push() : Adds an element to the end.
+     pop() : Removes the last element.
+     shift() : Removes the first element.
+     unshift() : Adds an element to the beginning.
+     sort() :  sort the Array in original Array
+    toSorted() : sort the Array and Create new Array
+    reverse() :  reverse the Array in original Array
+    toReversed() : reverse the Array and Create new Array
+
+## String:
+
+           declaration of String :
+
+                 let str = "Hello, World!";
+                 let str2 = 'Single quote string';
+
+          methods of String :
+
+                length : Returns the length of the string.
+                toUpperCase() : Converts to uppercase.
+                toLowerCase() : Converts to lowercase.
+                substring() : Extracts characters between two indices.
+                indexOf() : Returns the index of the first occurrence of a value.
+                split() : Splits the string into an array.
+
+
+## Object :
+
+               declaration of Objects : 
+
+                 let obj = {
+                                name: 'John',
+                                age: 30
+                               };
+
+              console.log(obj.name);
+              console.log(obj['age']); 
+
+              methods of Objects :
+
+                     Object.keys() : 
+                                                Returns an array of keys.
+                                                      let variable_name = Object.keys(object_name)
+
+                     Object.values() :
+                                                 Returns an array of values.
+                                                      let variable_name = Object.values(object_name)
+
+
+##Operators
+
+JavaScript Arithmetic Operators
+Arithmetic Operators are used to perform arithmetic on numbers:
+
+    1. Arithmetic Operators Example
+
+              +	Addition
+               -	Subtraction
+              *	Multiplication
+             **	Exponentiation 
+              /	Division
+             %	Modulus (Division Remainder)
+            ++	Increment
+              --	Decrement
+
+
+
+      2. Comparison Operators
+           ==	         equal to
+           ===	equal value and equal type
+          !=	        not equal
+          !==	       not equal value or not equal type
+          >	       greater than
+         <	        less than
+          >=	       greater than or equal to
+        <=	       less than or equal to  
+
+    3. Logical Operators
+
+          &&	logical and
+            ||	logical or
+            !=	        logical not
+
+
+## Conditional Statements
+
+       In JavaScript we have the following conditional statements:
+        If / else if / else Statement
+
+                     if (condition1) {
+                                                          //  block of code to be executed if condition1 is true
+                                                 } 
+                     else if (condition2) {
+                                                         //  block of code to be executed if the condition1 is false and condition2 is true
+                                                         } 
+                     else    {
+                                                        //  block of code to be executed if the condition1 is false and condition2 is false
+                                   }
+
+      Switch Statement
+                        Use the switch statement to select one of many code blocks to be executed.
+
+                                           Syntax
+                                                  switch(expression) {
+                                                                      case x:
+                                                                              // code block
+                                                                                  break;
+                                                                     case y:
+                                                                                  // code block
+                                                                                      break;
+                                                                    default:
+                                                                                     // code block
+                                                                                       }
+## Loops 
+
+          For Loop : 
+                                      Syntax
+                                                         for (expression 1; expression 2; expression 3) {
+                                                                                       // code block to be executed
+                                                                             }
+                                                         
+
+                                         Example
+                                                            for (let i = 0; i < 5; i++) {
+                                                                     console.log(i);
+                                                                                     }               
+           While Loop
+
+                                               Syntax
+                                                                 while (condition) {
+                                                                                                      // code block to be executed
+                                                                                                   }
+                                               Example
+                                                                     let i = 0 ;
+                                                                     while (i < 10) {
+                                                                                 console.log(i);
+                                                                                  i++;
+                                                                                               }  
+
+
+## Function :
+
+                     Definition : A block of code designed to perform a particular task. 
+                     Can take inputs (parameters) and return a value.
+
+                     Syntax for Functions
+
+                                           function Hello(){
+                                                      console.log("Very Hard")
+                                                   }
+
+                                          Hello()
+                                          Hello()
+                                          Hello()
+
+                   Parameterized Functions
+
+                                        function Students(Name){
+                                                       console.log("Students "+Name)
+                                                                }
+                                       Students("Ritik")
+                                       Students("Yash")
+                                       Students("Deepak")
+
+
+                      Example
+
+                                       function add(a, b){
+                                               return(a*b)
+                                               }
+                                       console.log(add(4,6))
+
+##  Arrow Function:
+
+              let subtract = (a, b) => a - b;
+
+
+
+
+
+
+## JavaScript Function Implement in HTML File 
+
+                                   <body>
+                                                         <h1 id="t"> HTML Content</h1>
+                                                          <button onclick="Bluecolor()"> blue color Function</button>
+                                                           <button onclick="Redcolor()">Red color Function</button>
+
+                                                  <script>
+                                                                     function Bluecolor() {
+                                                                                   t.style.color = 'blue'
+                                                                                   t.textContent = 'Blue Color Functions ';
+                                                                                                              }
+
+                                                                       function Redcolor() {
+                                                                                        t.style.color = "red"
+                                                                                         t.textContent = "Red color Function";
+                                                                                                          }
+                                                     </script>
+                                    </body>
+
+                                                                                    ## Home Work ##
+
+                                                                                          ##  Loops  ##
+
+           #  Write a JavaScript program to print the first 10 natural numbers using a while loop.
+           #  Write a JavaScript program to calculate the sum of all numbers from 1 to 100 using a for loop.
+           #  Write a JavaScript program to print all even numbers between 1 and 50 using a for loop.
+           #  Write a JavaScript program to find the factorial of a number entered by the user using a while loop.
+           #  Write a JavaScript program to reverse a number using a while loop.
+           #  Write a JavaScript program to print the Fibonacci series up to a certain number entered by the user using a for loop.
+           #  Write a JavaScript program to check whether a number is prime or not using a for loop.
+           #  Write a JavaScript program to count the number of digits in a given number using a while loop.
+           #  Write a JavaScript program to calculate the power of a number using a for loop.
+           #  Write a JavaScript program that prints all prime numbers between 1 and 100 using nested for loops.
+
+                                                                                            ## If-Else ##
+            #  Write a JavaScript program to find the largest of three numbers entered by the user using if-else statements.
+            #  Write a JavaScript program to check whether a year is a leap year or not using if-else.
+            #  Write a JavaScript program to check whether a character entered by the user is a vowel or a consonant using if-else.
+            #  Write a JavaScript program to check whether a number entered by the user is positive, negative, or zero using if-else.
+            #  Write a JavaScript program to find the grade of a student based on marks entered by the user. Use the following conditions:
+                                        Marks > 90: Grade A
+                                        Marks > 75: Grade B
+                                        Marks > 50: Grade C
+                                        Marks <= 50: Grade D
+            #  Write a JavaScript program to check whether a given string is a palindrome using if-else statements.
+            #  Write a JavaScript program to check if a number entered by the user is divisible by both 3 and 7 using if-else.
+
+                                                                                               ## Switch Case ##
+            #  Write a JavaScript program that takes a number from 1 to 12 and prints the corresponding month using a switch statement.
+            #  Write a JavaScript program to perform basic arithmetic operations (addition, subtraction, multiplication, division) based on the user's choice using a switch         
+                 statement.           
+            #  Write a JavaScript program that takes a grade (A, B, C, D, F) as input and prints a description using a switch statement:
+                                                     A: Excellent
+                                                     B: Good
+                                                     C: Average
+                                                     D: Poor
+                                                     F: Fail
