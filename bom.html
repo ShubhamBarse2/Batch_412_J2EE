@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <H1>BOM (Browser Object Model)</H1>
+    <br>
+    <button onclick="BomAction()" >click here to see BOM Action</button>
+
+<script>
+
+    // alert("Warning message... ! ");
+
+// confirm("Welcome");
+
+
+prompt("www");
+
+function BomAction(){
+
+ console.log("Welcome");  
+ 
+ console.log(navigator.platform);
+console.log("Screen Height: " + screen.height);
+console.log("Screen Color Depth: " + screen.colorDepth);
+        console.log("Screen Pixel Depth: " + screen.pixelDepth);
+
+
+        console.log("Browser Language: " + navigator.language);
+        console.log("Browser Online Status: " + navigator.onLine);
+        console.log("Browser Name: " + navigator.appName);
+        console.log("Browser Version: " + navigator.appVersion);
+        console.log("Cookies Enabled: " + navigator.cookieEnabled);
+        console.log("JavaScript Enabled: " + navigator.javaEnabled());
+        console.log("Platform: " + navigator.platform);
+        console.log("User Agent: " + navigator.userAgent);
+
+//         // window
+        console.log("Window Inner Width: " + window.innerWidth);
+        console.log("Window Inner Height: " + window.innerHeight);
+        console.log("Window Outer Width: " + window.outerWidth);
+        console.log("Window Outer Height: " + window.outerHeight);
+        console.log("Window Location: " + window.location.href);
+        console.log("Window Title: " + document.title);
+
+}
+
+</script>
+
+</body>
+</html>
