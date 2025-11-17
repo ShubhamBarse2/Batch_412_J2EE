@@ -1,0 +1,152 @@
+refer this code  - DOM : 
+
+Combination of All :
+
+for ID : 
+
+<h1 id="head">Welcome today we learned about DOM</h1>
+    <button onclick="Change()" >Click Here</button>
+<script>
+function Change(){
+let change =  document.getElementById("head");
+change.innerHTML = "Hello World";   
+// change.textContent = "Hello World";   
+}
+ </script>
+
+
+
+
+
+for Classes : 
+
+
+<h1>Item List</h1>
+    <h1>
+    <p class="item">Item 1</p>
+      <p class="item">Item 2</p>
+        <p class="item">Item 3</p>
+</h1>
+<button onclick="Changable()">click here</button>
+<script>
+    function Changable(){
+       let items =  document.getElementsByClassName('item');
+       for(let i=0;i<items.length ;i++){
+        items[i].style.backgroundColor = 'red';
+        items[i].style.color = 'white';
+       }
+    }
+
+
+
+
+3) QuerySelector : 
+
+
+  <h1 id="head">DOM Manipulations</h1>
+    <p class="para">This is a paragraph.</p>
+<button onclick="ChangeContent()">click here</button>
+<script>
+    function ChangeContent() {
+       let heading  = document.querySelector('#head');
+       heading.innerHTML = "DOM Manipulation is fun!";
+        let message  = document.querySelector('.para');
+        message.innerHTML = "The content has been changed successfully!";
+    }
+</script>
+
+
+4)QuerySelectorAll (HW) : 
+
+
+
+
+
+5) Create an NEW Element : 
+
+
+
+    <h1>....DOM....</h1>
+    <ul id="item-list">
+        <li>item</li>
+        </ul>
+<button onclick="addItem()">click here </button>
+<script>
+    function addItem() {
+        let newItem =  document.createElement("li");
+        newItem.textContent = 'New Item';
+        let list = document.getElementById("item-list");
+        list.appendChild(newItem);  
+    }
+    </script>
+
+
+
+
+
+
+
+
+
+
+also refer this code : 
+(dom methods used in ONE) :
+
+
+
+
+<div id="div1">
+    <p class="item">Paragraph 1</p>
+    <p class="item">Paragraph 2</p>
+    <p class="item">Paragraph 3</p>
+   </div>
+
+   <div id ="div2">
+    <button onclick="AddElement()">Add Element</button>
+    <button onclick="RemoveElement()">Remove Element</button>
+    <button onclick="updateElement()">update Element</button>
+   </div>
+
+   <script>
+    function AddElement(){
+        let div1 = document.getElementById('div1');
+        let newelement = document.createElement('p');
+        newelement.classList.add('item');
+        newelement.innerHTML ='paragraph 4';
+        div1.appendChild(newelement);
+    }
+    function RemoveElement(){
+        let item = document.getElementsByClassName('item');
+        if(item.length>0){
+            let div1 = document.getElementById('div1');
+           div1.removeChild(item[0]); 
+        }else{
+            alert('No element found');
+        }
+    }
+    // function updateElement(){
+        <p id ="myelement"> this text will be updated</p>
+        document.getElementById('myelement').innerHTML="update content";
+    // }
+   </script>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

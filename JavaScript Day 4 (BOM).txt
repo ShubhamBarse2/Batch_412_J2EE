@@ -1,0 +1,128 @@
+## Browser Object Model (BOM)
+                                                         The Browser Object Model (BOM) is used to interact with the browser.
+
+                                 Window Object :
+
+                                                             The window object represents a window in browser. 
+                                                             An object of window is created automatically by the browser.
+                                                             Window is the object of browser, it is not the object of javascript. 
+                                                             The javascript objects are string, array, date etc.
+
+                                                   Methods of window object
+
+                                                              alert() : displays the alert box containing message with ok button.
+
+                                                              confirm() : displays the confirm dialog box containing message with ok and cancel button.
+
+                                                              prompt() : displays a dialog box to get input from the user.
+
+                                                              open() : opens the new window.
+
+                                                                         <script>
+                                                                             function Open(){  
+                                                                                         open('http://www.google.com');  
+                                                                                                      }  
+                                                                          </script>  
+                                                                                 <input type="button" value="Google" onclick="Open()"/>  
+
+
+                                                              
+                                                              setTimeout() :  JavaScript that allows you to execute a function or a block of code after a specified delay (in milliseconds).
+
+                                                                                 function greet(name) {
+                                                                                                      return name;
+                                                                                            }
+
+                                                                                 setTimeout (     
+                                                                                                           () => {
+                                                                                        let result = greet('Ritik');
+                                                                                                  document.write(result);
+                                                                                                  }, 3000);
+
+                                           JavaScript Navigator Object
+
+                                                                                            The JavaScript navigator object is used for browser detection. 
+                                                                                             It can be used to get browser information such as appName, appCodeName, userAgent etc.
+
+                                                      appCodeName :   Returns the code name of the browser (e.g., "Mozilla").
+                                              
+                                                                             document.writeln("<br/>navigator app Code Name: "+ navigator.appCodeName);  
+
+                                                      appName :  Returns the name of the browser (e.g., "Netscape").
+
+                                                                           document.writeln("<br/> navigator app Name: "+ navigator.appName); 
+ 
+                                                    appVersion :   Returns the version information of the browser.
+
+                                                                          document.writeln("<br/> navigator app Version: "+ navigator.appVersion);  
+
+                                                   cookieEnabled :  Indicates whether cookies are enabled in the browser (true or false).
+
+                                                                          document.writeln("<br/> navigator cookie Enabled: "+ navigator.cookieEnabled);  
+ 
+                                                   language :   Returns the browser's language (e.g., "en-US").
+
+                                                                       document.writeln("<br/>navigator language: "+navigator.language); 
+
+                                                   userAgent :  Returns the browser's user agent string, which includes information about the browser, operating system, and device
+
+                                                                       document.writeln("<br/>navigator userAgent: "+navigator.userAgent);  
+        
+                                                    platform :  Returns the platform on which the browser is running (e.g., "Win32", "MacIntel").
+
+                                                                       document.writeln("<br/>navigator platform: "+navigator.platform); 
+
+                                                    online :   Indicates whether the browser is currently online (true or false).
+
+                                                                       document.writeln("<br/>navigator onLine: "+navigator.onLine);  
+
+                JavaScript Screen Object :
+
+                                                                      The JavaScript screen object holds information of browser screen. 
+                                                                       It can be used to display screen width, height, colorDepth, pixelDepth etc.
+
+                                                                         width : 
+                                                                                         document.writeln("<br/>screen width: "+screen.width);
+
+                                                                       height :   
+                                                                                          document.writeln("<br/>screen height: "+screen.height);  
+
+                                                                      availWidth :
+                                                                                          document.writeln("<br/>screen avail Width: "+screen.availWidth); 
+ 
+                                                                     availHeight :
+                                                                                          document.writeln("<br/>screen avail Height: "+screen.availHeight);  
+
+                                                                     colorDepth :   Returns the number of bits used to display one color.
+
+                                                                                          document.writeln("<br/>screen color Depth: "+screen.colorDepth); 
+ 
+                                                                    pixelDepth :  Returns the number of bits used for a single pixel.
+
+                                                                                          document.writeln("<br/>screen pixel Depth: "+screen.pixelDepth);  
+
+
+
+## Alert:
+
+                 Purpose : To display a simple message to the user.
+                 Interaction : Shows a message with an "OK" button.
+                 Returns: No return value (doesn't expect user input).
+
+
+## Prompt:
+
+                Purpose : To ask for user input.
+                Interaction : Shows a text box along with "OK" and "Cancel" buttons.
+                Returns : The input text if "OK" is clicked, null if "Cancel" is clicked.
+
+
+## Confirm:
+
+                Purpose : To ask for confirmation from the user (e.g., Yes/No, OK/Cancel).
+                Interaction : Shows "OK" and "Cancel" buttons.
+                Returns : true if "OK" is clicked, false if "Cancel" is clicked.
+
+
+
+

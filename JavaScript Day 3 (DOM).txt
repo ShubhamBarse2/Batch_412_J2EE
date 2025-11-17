@@ -1,0 +1,43 @@
+
+
+## DOM (Document Object Model) in JavaScript.
+
+                          The DOM (Document Object Model) is a programming interface for web documents. 
+                          It represents the page  structure as a tree of objects, where each object corresponds to a part of the document.
+                         Through the DOM, JavaScript can dynamically access and manipulate the content, structure, and style of a webpage.
+
+                        The DOM represents the structure of the HTML page, with the <body> as the root of the page content.
+
+                         Key Concepts:
+
+                                 Document : Represents the entire webpage (the root of the DOM tree).
+
+                                 Nodes : The elements of the DOM tree. The most common types are:
+
+                                 Element nodes : Represent HTML elements (e.g., <div>, <p>).
+
+                                 Text nodes : Represent the text inside an element.
+
+                                 Attribute nodes : Represent HTML attributes (e.g., class, id).
+
+                                 Parent and Child Nodes : Elements can contain other elements (children), forming a hierarchy.
+
+                         Common DOM Methods:
+
+                                     document.getElementById(id) : Selects an element by its ID.
+
+                                     document.getElementsByClassName(className)  : Selects elements by class name.
+
+                                     document.querySelector(selector) :  Selects the first element matching a CSS selector.
+
+                                     document.createElement(tagName) : Creates a new HTML element.
+
+                                     element.appendChild(child)  : Adds a new child node to an element.
+
+                                     element.removeChild(child)   : Removes a child node from an element.
+
+                                     element.innertext/innerHtml : Gets or sets the HTML content inside an element.
+
+
+
+
