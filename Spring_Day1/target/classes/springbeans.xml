@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+
+<beans>
+	<!-- <bean class="com.tka.Student" id="std"> <property name="studId" value="121"></property> 
+		<property name="name" value="om"></property> <property name="city" value="nsk"></property> -->
+	<!--<bean class="com.tka.College" id="clg"> <property name="college_Id" 
+		value="1"></property> <property name="c_Name" value="IIT "></property> <property 
+		name="city" value="nsk"></property> <property name="stud" ref="std"></property> -->
+
+
+	<bean class="com.tka.Student" id="std">
+		<constructor-arg index="0" value="134"></constructor-arg>
+		<constructor-arg index="1" value="rahul"></constructor-arg>
+		<constructor-arg index="2" value="pune"></constructor-arg>
+	</bean>
+	<bean class="com.tka.College" id="clg">
+		<constructor-arg index="0" value="1"></constructor-arg>
+		<constructor-arg index="1" value="DYP"></constructor-arg>
+		<constructor-arg index="2" value="goa"></constructor-arg>
+		<constructor-arg index="3" ref="std"></constructor-arg>
+	</bean>
+
+
+</beans>
